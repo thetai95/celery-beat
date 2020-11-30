@@ -14,3 +14,8 @@
 ## Difference between different ways to create celery task: @share_task and @celery.task
 - celery v3 -> @celery.task
 - celery v4 -> @share_task
+
+## Note
+- bind=True: A task being bound means the first argument to the task will always be the task instance (self), just like Python bound methods
+- kế thừa Task: https://docs.celeryproject.org/en/latest/userguide/tasks.html#task-inheritance
+- task_ignore_result
